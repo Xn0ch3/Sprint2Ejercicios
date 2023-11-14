@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Eventos</title>
+</head>
+
+<body class="flex flex-col align-middle text-center justify-center bg-black">
+    <header>
+    </header>
+    <main class=" flex-col container mx-auto px-4 py-6 gap-5 flex  justify-between items-center ">
+        <h2 class="text-3xl font-bold text-2x bg-white gap-5 rounded-md p-5 ">Eventos
+        </h2>
+        <div class="flex flex-wrap  align-middle justify-center  gap-3" id="contenedorGeneral">
+
+            <div class=" flex flex-col align-middle justify-center items-center gap-4 bg-white h-[22rem] w-[22rem] font-medium rounded-lg p-4 "
+                id="EjercicioN°1"> Ejercicio N°1
+
+                <div class=" bg-gray-600 items-center w-[17rem] h-[17rem]   rounded-lg " id="contenedorEjN°1">
+                    <p id="colorTexto"></p>
+                </div>
+                <button class=" bg-yellow-500 text-neutral-950  w-[4rem] h-[2rem] font-medium  rounded "
+                    id="miBoton">Cambiar</button>
+            </div>
+
+            <div class=" flex flex-col align-middle justify-center items-center gap-4 bg-white h-[22rem] w-[22rem] font-medium  rounded-lg p-4"
+                id="EjercicioN°2"> EjercicioN°2
+
+                <div class=" bg-black items-center w-[17rem] h-[17rem]   rounded-lg " id="contenedorEjN°2">
+                    <p class="text-white not-italic font-semibold flex text-center flex-col " id="pantalla"></p>
+                </div>
+                <input type="text" placeholder="ingresar texto" id="textoDeInput" class=" rounded border-black">
+                <button class=" bg-yellow-500 text-neutral-950  w-[4rem] h-[2rem] font-medium  rounded "
+                    id="reset">Reset</button>
+            </div>
+
+            
+            <div class=" flex flex-col align-middle justify-center items-center gap-4 bg-white h-[22rem] w-[22rem] font-medium rounded-lg p-4 "
+                id="EjercicioN°3"> Ejercicio N°3
+                
+                <div class="flex flex-col align-middle justify-around  bg-gray-600 border-black  items-center w-[17rem] h-[17rem] font-medium  rounded-lg " id="contenedorEjN°3">
+                    <label class="bg-white   border-black rounded  font-bold  "  for="estaturaIngresada">Estatura
+                    </label>
+                        <label class="text-xs"  for="estaturaIngresada" >en Centimetros</label>
+                        <input type="text" placeholder="Ingresar Estatura" id="estaturaIngresada" name="estatura" class=" rounded border-black">
+                    <label class="bg-white   border-black  rounded font-bold "  for="pesoIngresado">Peso
+                    </label>
+                        <label class="text-xs"  for="pesoIngresado">en Kilogramos</label>
+                    <input type="text" placeholder="Ingresar Peso" id="pesoIngresado" class=" rounded border-black">
+
+                    <label class="bg-white   border-black  rounded font-bold "  for="resultadoIMC">Resultado
+                    </label>
+                        <label class="text-xs" for="resultadoIMC">Su Indice de Masa Corporal es:
+                            
+                    </label>
+                    <input type="text" name="resultadoIMC" id="resultadoIMC" readonly class=" rounded border-black" >
+
+
+                </div>
+                <button class=" bg-yellow-500 text-neutral-950  w-[4rem] h-[2rem] font-medium  rounded "
+                    id="calcularIMC">Calcular</button>
+            </div>
+
+            <div class=" flex flex-col align-middle justify-center items-center gap-4 bg-white h-[22rem] w-[22rem] font-medium rounded-lg p-4"
+            id="EjercicioN°4">EjercicioN°4
+            <div class="flex flex-col align-middle justify-around  bg-gray-600 border-black  items-center w-[17rem] h-[17rem]   rounded-lg " id="contenedorEjN°4">
+
+                <label class="bg-white   border-black  rounded font-bold "  for="monedaLocalIngresada">Moneda Local
+                </label>
+                <label class="text-xs"  for="monedaLocalIngresada">Sin Puntos ni Comas</label>
+                <input type="number" placeholder="Ingresar Moneda Local" id="monedaLocalIngresada" name="monedaLocal" class=" rounded border-black">
+
+                <label class="bg-white  border-black  rounded font-bold"  for="precioDolar">en Dolares</label>
+                <label class="text-xs"  for="monedaLocalIngresada">Sin Puntos ni Comas</label>
+                <input type="number" placeholder="Ingresar precio Dolares" id="precioDolar" class=" rounded border-black">
+
+                <input type="number" name="mostrarCambio" id="mostrarCambio" readonly class=" rounded border-black" >
+            </div>
+            <div class="flex justify-around w-[100%]">
+                <button class=" bg-yellow-500 text-neutral-950  w-[5rem] h-[3rem] font-medium  rounded  " id="convertirMoneda">Convertir</button>
+                <button class=" bg-yellow-500 text-neutral-950  w-[5rem] h-[3rem] font-medium  rounded " id="borrarCalculo">Borrar</button>
+            </div>
+        </div>
+
+
+        
+        <div class=" flex flex-col align-middle justify-center items-center gap-4 bg-white h-[22rem] w-[22rem] font-medium rounded-lg p-4 "
+        id="EjercicioN°5"> Ejercicio N°5
+
+        <div class=" bg-gray-600 items-center w-[17rem] h-[17rem]   rounded-lg " id="contenedorEjN°5">
+            <p id="colorTexto5"></p>
+        </div>
+        <button class=" bg-yellow-500 text-neutral-950  w-[4rem] h-[2rem] font-medium  rounded "
+            id="miBoton5">Cambiar</button>
+    </div>
+
+
+        </div>
+
+    </main>
+    <footer class="container mx-auto px-4 py-6 flex justify-between items-center text-sm font-medium">
+
+    </footer>
+    <script src="./index.js"></script>
+    <script src="./tailwind.config.js"></script>
+</body>
+
+</html>
